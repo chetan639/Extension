@@ -17,7 +17,14 @@ const detectClick = (e)=>{
         text: "clicked!",
         tagName: target.tagName,
         tagId: target.id || null,
-        browserType: browserType
+        browserType: browserType,
+        // classNameTag:,
+        // absoluteXPath:,
+        // relativeXpath:,
+        // name:,
+        // cssSelector:,
+        // elementinIframe: true,
+        // indicesFromRoottoIFrame:[2,3,0]
     } 
     browserVar.runtime.sendMessage(msg,(tab) => {
    console.log(tab);
